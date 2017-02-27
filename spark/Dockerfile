@@ -1,6 +1,9 @@
 # Dockerfile to create image for a Spark as a Service cluster
 # using Livy as the RESTful server to provide interactive query
 # capability on demand.
+#
+# Inspiration from: https://grzegorzgajda.gitbooks.io/spark-examples/content/basics/docker.html
+#
 
 FROM centos:latest 
 
