@@ -1,3 +1,9 @@
+#
+# Spark cluster setup for docker-compose
+#
+# Inspiration from: https://grzegorzgajda.gitbooks.io/spark-examples/content/basics/docker.html
+#
+
 spark-master:
     image: spark-2
     command: sh -c "/usr/local/spark-1.6.2-bin-hadoop2.6/bin/spark-class org.apache.spark.deploy.master.Master -h spark-master& 2>&1; /usr/local/livy-server-0.2.0/bin/livy-server"
