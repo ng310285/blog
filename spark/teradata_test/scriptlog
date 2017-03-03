@@ -1,0 +1,162 @@
+Mar 03 01:15:47 VprocID 1:           LD_PRELOAD /usr/tdbms/lib/libgetexectime.so
+Mar 03 01:15:47 VprocID 0:           LD_PRELOAD /usr/tdbms/lib/libgetexectime.so
+Mar 03 01:15:47 VprocID 1:     TeradataPRGvproc N
+Mar 03 01:15:47 VprocID 1:                  PWD /var/opt/teradata/tdtemp/uiftemp/1_17-Mar-03_01-15-47_9936
+Mar 03 01:15:47 VprocID 1:                SHLVL 1
+Mar 03 01:15:47 VprocID 1:                    _ /usr/local/anaconda3/bin/python3
+Mar 03 01:15:47 VprocID 0:     TeradataPRGvproc N
+Mar 03 01:15:47 VprocID 0:                  PWD /var/opt/teradata/tdtemp/uiftemp/0_17-Mar-03_01-15-47_3702
+Mar 03 01:15:47 VprocID 0:                SHLVL 1
+Mar 03 01:15:47 VprocID 0:                    _ /usr/local/anaconda3/bin/python3
+Mar 03 01:15:47 VprocID 1: Fatal Python error: Segmentation fault
+Mar 03 01:15:47 VprocID 1: Current thread 0x00007ffff7fdf700 (most recent call first):
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap_external>", line 922 in create_module
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 560 in module_from_spec
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 648 in _load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 1:   File "/usr/local/anaconda3/lib/python3.6/ssl.py", line 101 in <module>
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap_external>", line 678 in exec_module
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 655 in _load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 1:   File "/usr/local/anaconda3/lib/python3.6/site-packages/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py", line 9 in <module>
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap_external>", line 678 in exec_module
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 655 in _load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 1009 in _handle_fromlist
+Mar 03 01:15:47 VprocID 1:   File "/usr/local/anaconda3/lib/python3.6/site-packages/requests/packages/urllib3/packages/__init__.py", line 3 in <module>
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap_external>", line 678 in exec_module
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 655 in _load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 936 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 936 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 936 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 1:   File "/usr/local/anaconda3/lib/python3.6/site-packages/requests/packages/urllib3/exceptions.py", line 2 in <module>
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap_external>", line 678 in exec_module
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 655 in _load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 1:   File "/usr/local/anaconda3/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py", line 11 in <module>
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap_external>", line 678 in exec_module
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 655 in _load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 0: Fatal Python error: Segmentation fault
+Mar 03 01:15:47 VprocID 0: Current thread 0x00007ffff7fdf700 (most recent call first):
+Mar 03 01:15:47 VprocID 1:   File "/usr/local/anaconda3/lib/python3.6/site-packages/requests/packages/urllib3/__init__.py", line 8 in <module>
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap_external>", line 922 in create_module
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap_external>", line 678 in exec_module
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 560 in module_from_spec
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 655 in _load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 648 in _load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "/usr/local/anaconda3/lib/python3.6/ssl.py", line 101 in <module>
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 1009 in _handle_fromlist
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 1:   File "/usr/local/anaconda3/lib/python3.6/site-packages/requests/packages/__init__.py", line 27 in <module>
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap_external>", line 678 in exec_module
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 655 in _load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap_external>", line 678 in exec_module
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 655 in _load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "/usr/local/anaconda3/lib/python3.6/site-packages/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py", line 9 in <module>
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap_external>", line 678 in exec_module
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 936 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 655 in _load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 936 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 1009 in _handle_fromlist
+Mar 03 01:15:47 VprocID 1:   File "/usr/local/anaconda3/lib/python3.6/site-packages/requests/__init__.py", line 52 in <module>
+Mar 03 01:15:47 VprocID 0:   File "/usr/local/anaconda3/lib/python3.6/site-packages/requests/packages/urllib3/packages/__init__.py", line 3 in <module>
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap_external>", line 678 in exec_module
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap_external>", line 678 in exec_module
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 655 in _load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 655 in _load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 1:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 1:   File "./spark/spark_script.py", line 10 in <module>
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 936 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 936 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 936 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 0:   File "/usr/local/anaconda3/lib/python3.6/site-packages/requests/packages/urllib3/exceptions.py", line 2 in <module>
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap_external>", line 678 in exec_module
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 655 in _load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 0:   File "/usr/local/anaconda3/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py", line 11 in <module>
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap_external>", line 678 in exec_module
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 655 in _load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 0:   File "/usr/local/anaconda3/lib/python3.6/site-packages/requests/packages/urllib3/__init__.py", line 8 in <module>
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap_external>", line 678 in exec_module
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 655 in _load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 1009 in _handle_fromlist
+Mar 03 01:15:47 VprocID 0:   File "/usr/local/anaconda3/lib/python3.6/site-packages/requests/packages/__init__.py", line 27 in <module>
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap_external>", line 678 in exec_module
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 655 in _load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 936 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 936 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 0:   File "/usr/local/anaconda3/lib/python3.6/site-packages/requests/__init__.py", line 52 in <module>
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 205 in _call_with_frames_removed
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap_external>", line 678 in exec_module
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 655 in _load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 950 in _find_and_load_unlocked
+Mar 03 01:15:47 VprocID 0:   File "<frozen importlib._bootstrap>", line 961 in _find_and_load
+Mar 03 01:15:47 VprocID 0:   File "./spark/spark_script.py", line 10 in <module>
