@@ -1,31 +1,19 @@
-#import sys
-import os
-import resource
-import faulthandler
-faulthandler.enable()
-
-for param in os.environ.keys():
-    os.write(2, str("%20s %s\n" % (param,os.environ[param])).encode())
-
+import sys
 import requests
 import json
 import textwrap
 import time
+
 host = 'http://192.168.116.128:8998'
 data = {'kind': 'spark'}
 headers = {'Content-Type': 'application/json'}
 
-os.write(2,"a\n".encode())
 # Startup a session
 r = requests.post(host + '/sessions', data=json.dumps(data), headers=headers)
-os.write(2,"a\n".encode())
 session_url = host + r.headers['location']
-os.write(2,"a\n".encode())
 r = requests.get(session_url, headers=headers)
-os.write(2,"a\n".encode())
 session_id = r.json()['id']
 
-os.write(2,"a\n".encode())
 # Wait until the session has started
 while r.json()['state'] == 'starting':
     time.sleep(1)
