@@ -19,7 +19,7 @@ drop table  spark.query_ngrams;
                     SELECT    QueryId
                                      , SqlTextInfo
                     FROM DBC.QryLogSQL
-                ) PARTITION BY QueryID 
+                ) HASH BY QueryID 
         SCRIPT_COMMAND('sh --login -c "python ./spark/spark_script.py"')
         RETURNS ('QueryID VARCHAR(30)',  'json_text CLOB')
     ) AS tab
