@@ -26,8 +26,9 @@ line = sys.stdin.readline()
 while line:
     line_list = line.split('\t')
     query_id = str(line_list[0])
-    # Remove any new line characters for spark processing
+    # Remove any new line and quote characters for spark processing
     query_text = str(line_list[1]).replace('\n', ' ').replace('\r', '')
+    query_text = str(query_text).replace('\'', '').replace('\"', '')
 
     spark_code = str("""
         import org.apache.spark.ml.feature.{RegexTokenizer, Tokenizer, NGram}
