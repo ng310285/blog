@@ -55,11 +55,11 @@ while line:
 
     # Poll the url until processing is complete
     while r.json()['state'] == 'running' or r.json()['state'] == 'busy':
-        time.sleep(1)
+        time.sleep(0.1)
         r = requests.get(code_session_url, headers=headers)
     # Output the results
     r = requests.get(code_session_url, headers=headers)
-    print("%s\t%s" % (query_id, str(r.json()['output'])))
+    print("%s\t%s" % (query_id, json.dumps(r.json()['output'])))
 
     # Get the next line
     line = sys.stdin.readline()
