@@ -1,9 +1,11 @@
+DELETE DATABASE spark;
+DROP DATABASE spark;
 CREATE DATABASE spark FROM DBC AS perm=1e9;
 
 DATABASE spark;
 GRANT ALL ON spark TO dbc;
 
-CALL sysuif.replace_file('spark_script', 'spark_script.py', 'sz!/root/spark/spark_script.py', 0);
+CALL sysuif.replace_file('spark_script', 'spark_script.py', 'sz!/root/blog-master/spark/spark_script.py', 0);
 
 SHOW FILE spark.spark_script;
 
@@ -31,4 +33,6 @@ SELECT COUNT(ngrams)
 FROM spark.query_ngrams
 ;
 
-				
+SELECT QueryID, ngrams (VARCHAR(2000))
+FROM spark.query_ngrams
+;				
