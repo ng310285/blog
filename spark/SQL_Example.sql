@@ -13,21 +13,26 @@ SET SESSION SEARCHUIFDBPATH = spark;
 
 drop table  spark.query_ngrams;
 
-    CREATE TABLE spark.query_ngrams AS (
-    SELECT    tab.QueryID
-                      , CAST(tab.json_text AS JSON) AS ngrams
-    FROM SCRIPT (
-        ON (
-                    SELECT    QueryId
-                                     , SqlTextInfo
-                    FROM DBC.QryLogSQL
-                ) HASH BY QueryID 
-        SCRIPT_COMMAND('sh --login -c "python ./spark/spark_script.py"')
-        RETURNS ('QueryID VARCHAR(30)',  'json_text CLOB')
+-- Make sure there are rows in DBC.QryLogSQL
+SELECT COUNT(*)
+FROM DBC.QryLogSQL
+;
+
+CREATE TABLE spark.query_ngrams AS (
+SELECT    tab.QueryID
+        , CAST(tab.json_text AS JSON) AS ngrams
+FROM SCRIPT (
+    ON (
+                SELECT   TOP 100 QueryId
+                       , SqlTextInfo
+                FROM DBC.QryLogSQL
+       ) HASH BY QueryID 
+       SCRIPT_COMMAND('python ./spark/spark_script.py')
+       RETURNS ('QueryID VARCHAR(30)',  'json_text CLOB')
     ) AS tab
-    ) WITH DATA
-    PRIMARY INDEX (QueryID)
-    ;
+) WITH DATA
+PRIMARY INDEX (QueryID)
+;
                             
 SELECT COUNT(ngrams)
 FROM spark.query_ngrams
