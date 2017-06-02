@@ -4,4 +4,5 @@ cd requests-2.6.0/
 python ./setup.py install
 
 chmod -R a+rx /usr/local/lib64/python2.6
+chmod a+rx /root
 chmod -R a+rx /root/blog-master
